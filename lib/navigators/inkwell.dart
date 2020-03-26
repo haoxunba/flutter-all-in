@@ -10,15 +10,20 @@ class _InkWellViewState extends State<InkWellView> {
   @override
   // TODO: implement widget
   Widget build(BuildContext context) {
-    return Center(
-      child: Material(
-        color: Colors.black,
-        child: InkWell(
-          onTap: () {
-            setState(() {
-              sideLength == 50 ? sideLength = 1 : sideLength = 50;
-            });
-          },
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Second Route"),
+      ),
+      body: Center(
+        child: Material(
+          color: Colors.black,
+          child: InkWell(
+            onTap: () {
+              setState(() {
+                sideLength == 50 ? sideLength = 1 : sideLength = 50;
+              });
+            },
+          ),
         ),
       ),
     );

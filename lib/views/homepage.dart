@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../navigators/routes.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -7,9 +8,9 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('First Route'),
       ),
-      body: Center(
-        child: RaisedButton(
-          child: Text('Open route'),
+      body: Column(children: <Widget>[
+        RaisedButton(
+          child: Text('InkWell'),
           onPressed: () {
             // Navigate to second route when tapped.
             Navigator.pushNamed(
@@ -18,7 +19,14 @@ class MyHomePage extends StatelessWidget {
             );
           },
         ),
-      ),
+        RaisedButton(
+          child: Text('stack'),
+          onPressed: () {
+            // Navigate to second route when tapped.
+            Navigator.of(context).push(AppRoutes.stackPage());
+          },
+        ),
+      ]),
     );
   }
 }

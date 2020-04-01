@@ -8,7 +8,6 @@ class InkWellView extends StatefulWidget {
 class _InkWellViewState extends State<InkWellView> {
   double sideLength = 50;
   @override
-  // TODO: implement widget
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

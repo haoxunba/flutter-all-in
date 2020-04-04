@@ -8,4 +8,10 @@ class WidgetsAllInRoutes {
   static PageRoute stackPage() => MaterialPageRoute(
         builder: (context) => StackView(),
       );
+  static PageRoute containerPage() => MaterialPageRoute(
+        builder: (context) => ContainerView(),
+      );
+  static PageRoute imagePage() => MaterialPageRoute(
+        builder: (context) => ImageView(),
+      );
 }

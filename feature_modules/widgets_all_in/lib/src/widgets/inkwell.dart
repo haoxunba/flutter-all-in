@@ -11,7 +11,7 @@ class _InkWellViewState extends State<InkWellView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Second Route"),
+        title: Text("Inkwell Widget"),
       ),
       body: Center(
         child: Material(

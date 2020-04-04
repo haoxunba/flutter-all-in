@@ -5,7 +5,7 @@ class StackView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Second Route"),
+        title: Text("Stack Widget"),
       ),
       body: Stack(
         children: <Widget>[

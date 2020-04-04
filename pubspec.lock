@@ -158,6 +158,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.2"
+  plugins_all_in:
+    dependency: transitive
+    description:
+      path: "feature_modules/plugins_all_in"
+      relative: true
+    source: path
+    version: "0.0.1"
   quiver:
     dependency: transitive
     description:
@@ -212,13 +219,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.2.11"
-  test_module:
-    dependency: transitive
-    description:
-      path: "feature_modules/test_module"
-      relative: true
-    source: path
-    version: "0.0.1"
   typed_data:
     dependency: transitive
     description:

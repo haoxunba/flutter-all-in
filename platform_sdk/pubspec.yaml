@@ -10,10 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+# 当工程中一个依赖包A去依赖另外一个包B时，不仅要在当前A包运行pub get，还要在主工程根目录运行 pub get
+# 因为不这么做会导致编译时依赖包A始终会报错提示没有添加依赖包B
   widgets_all_in:
     path: ../feature_modules/widgets_all_in
-  test_module:
-    path: ../feature_modules/test_module
+  plugins_all_in:
+    path: ../feature_modules/plugins_all_in
 
 dev_dependencies:
   flutter_test:

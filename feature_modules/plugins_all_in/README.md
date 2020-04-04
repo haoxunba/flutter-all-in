@@ -1,4 +1,4 @@
-# test_module
+# plugins_all_in
 
 A new Flutter package project.
 

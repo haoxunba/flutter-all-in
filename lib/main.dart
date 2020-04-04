@@ -1,25 +1,10 @@
 import 'package:flutter/material.dart';
-import './views/views.dart';
 
-void main() => runApp(MyApp());
+/// Importing files from outside lib/ is not supposed to work.
+/// This would prevent publishing packages to pub.dartlang.org
+/// because only lib/ and bin/ are downloaded when added to dependencies.
+/// https://stackoverflow.com/questions/54197007/import-dart-file-outside-lib-directory
+/// 所以这里都是推荐通过 package 的方式导入
+import 'package:platform_sdk/platform_sdk.dart';
 
-final routes = {
-  '/': (context) => MyHomePage(),
-  '/inkWellView': (context) => InkWellView(),
-  '/stackView': (context) => StackView(),
-};
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      initialRoute: '/',
-      routes: routes,
-    );
-  }
-}
+void main() => runApp(PlatformSdk());

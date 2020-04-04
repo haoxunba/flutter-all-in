@@ -1,29 +1,24 @@
 import 'package:flutter/material.dart';
-import '../navigators/routes.dart';
+import './routes/widgets_all_in_routes.dart';
 
-class MyHomePage extends StatelessWidget {
+class WidgetsAllIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Route'),
+        title: Text('Widgets All In'),
       ),
       body: Column(children: <Widget>[
         RaisedButton(
           child: Text('InkWell'),
           onPressed: () {
-            // Navigate to second route when tapped.
-            Navigator.pushNamed(
-              context,
-              '/inkWellView',
-            );
+            Navigator.of(context).push(WidgetsAllInRoutes.inkwellPage());
           },
         ),
         RaisedButton(
           child: Text('stack'),
           onPressed: () {
-            // Navigate to second route when tapped.
-            Navigator.of(context).push(AppRoutes.stackPage());
+            Navigator.of(context).push(WidgetsAllInRoutes.stackPage());
           },
         ),
       ]),

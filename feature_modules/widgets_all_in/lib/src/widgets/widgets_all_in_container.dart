@@ -37,9 +37,17 @@ class _WidgetsAllInContainer extends State<WidgetsAllInContainer> {
             child: Container(
               width: 100,
               height: 100,
-              alignment: Alignment.centerLeft,
               color: Colors.deepOrange,
             ),
+          ),
+          Column(
+            children: <Widget>[
+              Container(
+                width: 200,
+                height: 200,
+                color: Colors.grey,
+              ),
+            ],
           ),
           Container(
             /// 通过 padding 和 constraints 约束 child 的空间范围

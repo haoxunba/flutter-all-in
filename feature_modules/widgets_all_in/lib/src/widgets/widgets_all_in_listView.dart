@@ -16,11 +16,15 @@ class _WidgetsAllInListView extends State<WidgetsAllInListView> {
       body: Column(
         children: <Widget>[
           /// Column 中用 ListView 会报错，必须用 Expanded 包裹，或者其他方法
+          /// 这种错误和 widgets_all_in_column.dart 中的错误原因差不多，可以参考
           /// Reason for the error:
           /// Column expands to the maximum size in main axis direction (vertical axis), and so does the ListView.
           /// https://stackoverflow.com/questions/45669202/how-to-add-a-listview-to-a-column-in-flutter
           Expanded(
             child: WidgetsAllInListViewCommon(),
+          ),
+          Expanded(
+            child: WidgetsAllInListViewBuilder(),
           ),
         ],
       ),
@@ -32,23 +36,43 @@ class WidgetsAllInListViewCommon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      padding: const EdgeInsets.all(8),
       children: <Widget>[
         Container(
-          width: 20,
-          height: 20,
-          color: Colors.blue,
+          height: 50,
+          color: Colors.amber[600],
+          child: const Center(child: Text('Entry A')),
         ),
         Container(
-          width: 20,
-          height: 20,
-          color: Colors.yellow,
+          height: 50,
+          color: Colors.amber[500],
+          child: const Center(child: Text('Entry B')),
         ),
         Container(
-          width: 20,
-          height: 20,
-          color: Colors.pink,
+          height: 50,
+          color: Colors.amber[100],
+          child: const Center(child: Text('Entry C')),
         ),
       ],
     );
+  }
+}
+
+class WidgetsAllInListViewBuilder extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final List<String> entries = <String>['A', 'B', 'C'];
+    final List<int> colorCodes = <int>[600, 500, 100];
+
+    return ListView.builder(
+        padding: const EdgeInsets.all(8),
+        itemCount: entries.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            height: 50,
+            color: Colors.amber[colorCodes[index]],
+            child: Center(child: Text('Entry ${entries[index]}')),
+          );
+        });
   }
 }

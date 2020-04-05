@@ -13,7 +13,7 @@ class _PluginsAllIn extends State<PluginsAllIn> {
     return Column(
       children: <Widget>[
         RaisedButton(
-          child: Text('Container'),
+          child: Text('path_provider'),
           onPressed: () {
             Navigator.of(context).push(PluginsAllInRoutes.pluginPathProvider());
           },

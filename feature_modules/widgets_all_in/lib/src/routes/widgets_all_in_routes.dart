@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 import '../widgets/widgets_all_in_views.dart';
 
 class WidgetsAllInRoutes {
+  static PageRoute widgetsAllInColumnPage() => MaterialPageRoute(
+        builder: (context) => WidgetsAllInColumn(),
+      );
+  static PageRoute widgetsAllInContainerPage() => MaterialPageRoute(
+        builder: (context) => WidgetsAllInContainer(),
+      );
+  static PageRoute widgetsAllInExpandedPage() => MaterialPageRoute(
+        builder: (context) => WidgetsAllInExpanded(),
+      );
   static PageRoute inkwellPage() => MaterialPageRoute(
         builder: (context) => InkWellView(),
       );
@@ -10,9 +19,6 @@ class WidgetsAllInRoutes {
       );
   static PageRoute stackPage() => MaterialPageRoute(
         builder: (context) => StackView(),
-      );
-  static PageRoute widgetsAllInContainerPage() => MaterialPageRoute(
-        builder: (context) => WidgetsAllInContainer(),
       );
   static PageRoute imagePage() => MaterialPageRoute(
         builder: (context) => ImageView(),

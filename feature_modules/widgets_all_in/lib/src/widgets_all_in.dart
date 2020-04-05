@@ -10,15 +10,13 @@ class WidgetsAllIn extends StatefulWidget {
 class _WidgetsAllIn extends State<WidgetsAllIn> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Widgets All In'),
-      ),
-      body: Column(children: <Widget>[
+    return Column(
+      children: <Widget>[
         RaisedButton(
           child: Text('Container'),
           onPressed: () {
-            Navigator.of(context).push(WidgetsAllInRoutes.containerPage());
+            Navigator.of(context)
+                .push(WidgetsAllInRoutes.widgetsAllInContainerPage());
           },
         ),
         RaisedButton(
@@ -34,12 +32,39 @@ class _WidgetsAllIn extends State<WidgetsAllIn> {
           },
         ),
         RaisedButton(
+          child: Text('ListView'),
+          onPressed: () {
+            Navigator.of(context)
+                .push(WidgetsAllInRoutes.widgetsAllInListViewPage());
+          },
+        ),
+        RaisedButton(
           child: Text('Stack'),
           onPressed: () {
             Navigator.of(context).push(WidgetsAllInRoutes.stackPage());
           },
         ),
-      ]),
+        RaisedButton(
+          child: Text('StatefullWidget'),
+          onPressed: () {
+            Navigator.of(context)
+                .push(WidgetsAllInRoutes.statefullWidgetPage());
+          },
+        ),
+        RaisedButton(
+          child: Text('StatelessWidget'),
+          onPressed: () {
+            Navigator.of(context)
+                .push(WidgetsAllInRoutes.statelessWidgetPage());
+          },
+        ),
+        RaisedButton(
+          child: Text('Text'),
+          onPressed: () {
+            Navigator.of(context).push(WidgetsAllInRoutes.textPage());
+          },
+        ),
+      ],
     );
   }
 }

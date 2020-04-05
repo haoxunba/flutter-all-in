@@ -8,7 +8,17 @@ class PlatformSdk extends StatelessWidget {
   @override
   Widget build(BuildContext build) {
     return MaterialApp(
-      home: WidgetsAllIn(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter All In'),
+        ),
+        body: ListView(
+          children: <Widget>[
+            WidgetsAllIn(),
+            PluginsAllIn(),
+          ],
+        ),
+      ),
     );
   }
 }

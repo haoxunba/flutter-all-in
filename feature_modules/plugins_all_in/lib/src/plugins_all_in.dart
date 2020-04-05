@@ -1,8 +1,24 @@
 import 'package:flutter/material.dart';
+import 'routes/plugins_all_in_routes.dart';
 
-class PluginsAllIn extends StatelessWidget {
+// 如果子wighet有一个是statefulWidget那么WidgetsAllIn就必须也是StatefulWidget
+class PluginsAllIn extends StatefulWidget {
+  @override
+  _PluginsAllIn createState() => _PluginsAllIn();
+}
+
+class _PluginsAllIn extends State<PluginsAllIn> {
   @override
   Widget build(BuildContext context) {
-    return Text('PluginsAllIn');
+    return Column(
+      children: <Widget>[
+        RaisedButton(
+          child: Text('Container'),
+          onPressed: () {
+            Navigator.of(context).push(PluginsAllInRoutes.pluginPathProvider());
+          },
+        ),
+      ],
+    );
   }
 }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ContainerView extends StatefulWidget {
+class WidgetsAllInContainer extends StatefulWidget {
   @override
-  _ContainerView createState() => _ContainerView();
+  _WidgetsAllInContainer createState() => _WidgetsAllInContainer();
 }
 
-class _ContainerView extends State<ContainerView> {
+class _WidgetsAllInContainer extends State<WidgetsAllInContainer> {
   double sideLength = 50;
   @override
   Widget build(BuildContext context) {
@@ -15,6 +15,32 @@ class _ContainerView extends State<ContainerView> {
       ),
       body: ListView(
         children: [
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.yellow,
+          ),
+
+          /// 上面的Container为什么width不生效，下面的width就生效了
+          ///
+          /// Constraints in Flutter works a bit different than usual. Widgets themselves do not have constraints.
+          /// When you specify a width/height on a Container, you're not constraining Container. You're constraining the child of Container.
+          /// https://stackoverflow.com/questions/54717748/why-flutter-container-does-not-respects-its-width-and-height-constraints-when-it
+          ///
+          /// Container doesn't know the constraints of the Parent, then It try to fill all the space available.
+          /// https://stackoverflow.com/questions/54225462/flutter-why-is-container-width-not-honoured/54225592
+          ///
+          /// 这里牵涉到BoxConstraints的底层问题，知乎专栏https://zhuanlan.zhihu.com/p/41801871
+          /// 这也就解释了因为 ListView的约束，所以上面的Container高度就生效了
+          Align(
+            alignment: Alignment.center,
+            child: Container(
+              width: 100,
+              height: 100,
+              alignment: Alignment.centerLeft,
+              color: Colors.deepOrange,
+            ),
+          ),
           Container(
             /// 通过 padding 和 constraints 约束 child 的空间范围
             constraints: BoxConstraints.expand(

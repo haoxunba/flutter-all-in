@@ -15,7 +15,14 @@ class _PluginsAllIn extends State<PluginsAllIn> {
         RaisedButton(
           child: Text('path_provider'),
           onPressed: () {
-            Navigator.of(context).push(PluginsAllInRoutes.pluginPathProvider());
+            Navigator.of(context)
+                .push(PluginsAllInRoutes.pluginPathProviderPage());
+          },
+        ),
+        RaisedButton(
+          child: Text('rubber'),
+          onPressed: () {
+            Navigator.of(context).push(PluginsAllInRoutes.pluginRubberPage());
           },
         ),
       ],

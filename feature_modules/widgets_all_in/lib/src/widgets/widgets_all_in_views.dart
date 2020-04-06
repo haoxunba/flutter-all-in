@@ -1,6 +1,7 @@
 export './widgets_all_in_column.dart';
 export './widgets_all_in_container.dart';
 export './widgets_all_in_expanded.dart';
+export './widgets_all_in_form.dart';
 export './widgets_all_in_image.dart';
 export './widgets_all_in_inkwell.dart';
 export './widgets_all_in_listView.dart';

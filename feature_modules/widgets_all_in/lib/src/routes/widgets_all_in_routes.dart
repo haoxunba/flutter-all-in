@@ -11,6 +11,9 @@ class WidgetsAllInRoutes {
   static PageRoute widgetsAllInExpandedPage() => MaterialPageRoute(
         builder: (context) => WidgetsAllInExpanded(),
       );
+  static PageRoute widgetsAllInFormPage() => MaterialPageRoute(
+        builder: (context) => WidgetsAllInForm(),
+      );
   static PageRoute inkwellPage() => MaterialPageRoute(
         builder: (context) => InkWellView(),
       );

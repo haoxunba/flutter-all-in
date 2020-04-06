@@ -10,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  path_provider: ^1.4.5
+  rubber: ^0.4.0
 
 dev_dependencies:
   flutter_test:

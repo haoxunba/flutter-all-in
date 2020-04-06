@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:platform_sdk/platform_sdk.dart';
 
 /// Row 和 Column 都属于 flex box
 class WidgetsAllInColumn extends StatefulWidget {

@@ -24,7 +24,7 @@ class WidgetsAllInRoutes {
         builder: (context) => StackView(),
       );
   static PageRoute imagePage() => MaterialPageRoute(
-        builder: (context) => ImageView(),
+        builder: (context) => WidgetsAllInImage(),
       );
   static PageRoute statefullWidgetPage() => MaterialPageRoute(
         builder: (context) => StatefullWidgetView(),

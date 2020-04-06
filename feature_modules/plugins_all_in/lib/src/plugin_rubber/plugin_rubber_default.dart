@@ -59,7 +59,9 @@ class _DefaultPageState extends State<DefaultPage>
       ),
       body: Container(
         child: RubberBottomSheet(
+          // 显示 bottomSheet 底层的 widget
           lowerLayer: _getLowerLayer(),
+          // 显示 bottomSheet 对应的 widget
           upperLayer: _getUpperLayer(),
           animationController: _controller,
         ),
@@ -99,7 +101,7 @@ class _DefaultPageState extends State<DefaultPage>
 
   Widget _getUpperLayer() {
     return Container(
-      decoration: BoxDecoration(color: Colors.cyan),
+      decoration: BoxDecoration(color: Colors.cyan[900]),
     );
   }
 }

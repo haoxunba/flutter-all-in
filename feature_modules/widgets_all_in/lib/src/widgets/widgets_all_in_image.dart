@@ -64,6 +64,15 @@ class _WidgetsAllInImage extends State<WidgetsAllInImage> {
             image: NetworkImage(
                 'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
           ),
+          // final ImageProvider image;
+          // 实现 ImageProvider 的有 FileImageMemory ImageNetwork ImageResizeImage
+          // FileImageMemoryImage NetworkImageResizeImage
+          Image(
+            image: AssetImage(
+              'assets/images/car.jpg',
+              package: 'widgets_all_in',
+            ),
+          ),
           Image.network(
               'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg'),
           // Image.file(File(path), scale: 1.0, repeat: ImageRepeat.noRepeat,),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './routes/widgets_all_in_routes.dart';
 import './routes/widgets_all_in_material_routes.dart';
+import './routes/widgets_all_in_painting_route.dart';
 
 // final List<Map<String, PageRoute>> entries = <Map<String, PageRoute>>[
 //   {'Column': WidgetsAllInRoutes.widgetsAllInColumnPage()},
@@ -42,7 +43,11 @@ class RoteList {
     {'Text': WidgetsAllInRoutes.textPage()},
     {
       'Material Scaffold':
-          WidgetsAllInMaterialRoutes.widgetsAllInMaterialScaffold()
+          WidgetsAllInMaterialRoutes.widgetsAllInMaterialScaffold(),
+    },
+    {
+      'Painting BoxDecoration':
+          WidgetsAllInPaintingRoutes.widgetsAllInPaintingBoxDecorationPage(),
     },
   ];
 }

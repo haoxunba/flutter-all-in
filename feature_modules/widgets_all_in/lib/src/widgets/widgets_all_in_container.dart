@@ -23,11 +23,15 @@ class _WidgetsAllInContainer extends State<WidgetsAllInContainer> {
 
           /// 上面的Container为什么width不生效，下面的width就生效了
           ///
-          /// Constraints in Flutter works a bit different than usual. Widgets themselves do not have constraints.
-          /// When you specify a width/height on a Container, you're not constraining Container. You're constraining the child of Container.
+          /// Constraints in Flutter works a bit different than usual.
+          /// Widgets themselves do not have constraints.
+          /// When you specify a width/height on a Container,
+          /// you're not constraining Container.
+          /// You're constraining the child of Container.
           /// https://stackoverflow.com/questions/54717748/why-flutter-container-does-not-respects-its-width-and-height-constraints-when-it
           ///
-          /// Container doesn't know the constraints of the Parent, then It try to fill all the space available.
+          /// Container doesn't know the constraints of the Parent,
+          /// then It try to fill all the space available.
           /// https://stackoverflow.com/questions/54225462/flutter-why-is-container-width-not-honoured/54225592
           ///
           /// 这里牵涉到BoxConstraints的底层问题，知乎专栏https://zhuanlan.zhihu.com/p/41801871

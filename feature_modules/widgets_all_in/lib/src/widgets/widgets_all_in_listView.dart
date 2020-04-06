@@ -35,10 +35,15 @@ class _WidgetsAllInListView extends State<WidgetsAllInListView> {
 class WidgetsAllInListViewCommon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    /// 渲染框具有无边界约束的最常见情况是：
+    /// 当其被置于 flex boxes (Row 和 Column)内以及
+    /// 可滚动区域(ListView 和其它 ScrollView 的子类)内时
     return ListView(
       padding: const EdgeInsets.all(8),
       children: <Widget>[
+        // width 不起作用，参考 widgets_all_in_container.dart
         Container(
+          width: 200,
           height: 50,
           color: Colors.amber[600],
           child: const Center(child: Text('Entry A')),

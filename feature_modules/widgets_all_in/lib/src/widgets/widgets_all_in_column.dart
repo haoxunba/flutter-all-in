@@ -37,7 +37,7 @@ class _WidgetsAllInColumn extends State<WidgetsAllInColumn> {
           //     ),
           //   ],
           // ),
-          //// 显示此消息的另一个原因是
+          /// 显示此消息的另一个原因是
           /// 将Column嵌套在ListView或其他垂直滚动栏中。
           /// 在那种情况下，确实有无限的垂直空间（垂直滚动列表的整个要点是允许垂直的无限空间）。
           /// 在这种情况下，通常值得研究为什么内部Column应该有一个Expanded或Flexible子代：

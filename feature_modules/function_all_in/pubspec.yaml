@@ -1,4 +1,4 @@
-name: feature_registry
+name: function_all_in
 description: A new Flutter package project.
 version: 0.0.1
 author:
@@ -10,14 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # 当工程中一个依赖包A去依赖另外一个包B时，不仅要在当前A包运行pub get，还要在主工程根目录运行 pub get
-  # 因为不这么做会导致编译时依赖包A始终会报错提示没有添加依赖包B
-  function_all_in:
-    path: ../feature_modules/function_all_in
-  widgets_all_in:
-    path: ../feature_modules/widgets_all_in
-  plugins_all_in:
-    path: ../feature_modules/plugins_all_in
+  random_color: ^1.0.5
 
 dev_dependencies:
   flutter_test:

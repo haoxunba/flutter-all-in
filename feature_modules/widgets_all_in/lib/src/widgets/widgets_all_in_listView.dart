@@ -40,6 +40,9 @@ class WidgetsAllInListViewCommon extends StatelessWidget {
     /// 可滚动区域(ListView 和其它 ScrollView 的子类)内时
     return ListView(
       padding: const EdgeInsets.all(8),
+      // 强制child在滚动方向的固定大小值（默认垂直滚动，那么就表示强制child的高度是100）
+      // 在极速滚动时，滚动机制可以节省工作
+      itemExtent: 100,
       children: <Widget>[
         // width 不起作用，参考 widgets_all_in_container.dart
         Container(

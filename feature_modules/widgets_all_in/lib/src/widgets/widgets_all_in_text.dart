@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class TextView extends StatelessWidget {
+class WidgetsAllInText extends StatelessWidget {
   final double price = 500.0;
   @override
   Widget build(BuildContext context) {

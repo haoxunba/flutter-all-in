@@ -8,8 +8,6 @@ class WidgetsAllInImage extends StatefulWidget {
 }
 
 class _WidgetsAllInImage extends State<WidgetsAllInImage> {
-  final String _imageUrl =
-      'https://images.unsplash.com/photo-1565898835704-3d6be4a2c98c?fit=crop&w=200&q=60';
   File file;
 
   @override

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class StatefullWidgetView extends StatefulWidget {
+class WidgetsAllInStatefullWidget extends StatefulWidget {
   @override
-  _StatefullWidgetView createState() => _StatefullWidgetView();
+  _WidgetsAllInStatefullWidget createState() => _WidgetsAllInStatefullWidget();
 }
 
-class _StatefullWidgetView extends State<StatefullWidgetView> {
+class _WidgetsAllInStatefullWidget extends State<WidgetsAllInStatefullWidget> {
   double sideLength = 50;
   @override
   Widget build(BuildContext context) {

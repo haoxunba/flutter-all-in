@@ -5,6 +5,7 @@ export './widgets_all_in_form.dart';
 export './widgets_all_in_image.dart';
 export './widgets_all_in_inkwell.dart';
 export './widgets_all_in_listView.dart';
+export './widgets_all_in_singleChildScrollView.dart';
 export './widgets_all_in_stack.dart';
 export './widgets_all_in_statefullWidget.dart';
 export './widgets_all_in_statelessWidget.dart';

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class InkWellView extends StatefulWidget {
+class WidgetsAllInInkWell extends StatefulWidget {
   @override
-  _InkWellViewState createState() => _InkWellViewState();
+  _WidgetsAllInInkWell createState() => _WidgetsAllInInkWell();
 }
 
-class _InkWellViewState extends State<InkWellView> {
+class _WidgetsAllInInkWell extends State<WidgetsAllInInkWell> {
   double sideLength = 50;
   @override
   Widget build(BuildContext context) {

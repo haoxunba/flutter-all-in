@@ -29,6 +29,10 @@ final List<WidgetsAllInCatalogItem> catalogItems = [
     targetWidget: WidgetsAllInForm(),
   ),
   WidgetsAllInCatalogItem(
+    title: 'Gesture',
+    targetWidget: WidgetsAllInGestureDetector(),
+  ),
+  WidgetsAllInCatalogItem(
     title: 'Image',
     targetWidget: WidgetsAllInImage(),
   ),
@@ -37,13 +41,29 @@ final List<WidgetsAllInCatalogItem> catalogItems = [
     targetWidget: WidgetsAllInInkWell(),
   ),
   WidgetsAllInCatalogItem(
-    title: 'List',
+    title: 'ListView',
     targetWidget: WidgetsAllInCatalog(
-      title: 'List',
+      title: 'ListView',
       catalogItems: [
         WidgetsAllInCatalogItem(
-          title: 'Normal List',
+          title: 'Normal ListView',
           targetWidget: WidgetsAllInListView(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'ListView.builder',
+          targetWidget: WidgetsAllInListViewBuilder(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'ListView KeepScrollOffset',
+          targetWidget: WidgetsAllInListViewKeepScrollOffset(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'ListView ScrollController',
+          targetWidget: WidgetsAllInListViewScrollController(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'ListView NotificationListener',
+          targetWidget: WidgetsAllInListViewNotificationListener(),
         ),
       ],
     ),

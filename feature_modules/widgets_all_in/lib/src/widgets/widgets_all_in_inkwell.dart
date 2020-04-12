@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
+// 实现涟漪效果
 class WidgetsAllInInkWell extends StatefulWidget {
   @override
   _WidgetsAllInInkWell createState() => _WidgetsAllInInkWell();
 }
 
 class _WidgetsAllInInkWell extends State<WidgetsAllInInkWell> {
-  double sideLength = 50;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,15 +14,24 @@ class _WidgetsAllInInkWell extends State<WidgetsAllInInkWell> {
         title: Text("Inkwell Widget"),
       ),
       body: Center(
-        child: Material(
-          color: Colors.black,
-          child: InkWell(
-            onTap: () {
-              setState(() {
-                sideLength == 50 ? sideLength = 1 : sideLength = 50;
-              });
-            },
-          ),
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: EdgeInsets.all(12.0),
+                  child: Text('Inkwell Button'),
+                ),
+              ),
+            ),
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.all(12.0),
+                child: Text('Normal Button'),
+              ),
+            ),
+          ],
         ),
       ),
     );

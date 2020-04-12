@@ -73,6 +73,14 @@ final List<WidgetsAllInCatalogItem> catalogItems = [
     targetWidget: WidgetsAllInSingleChildScrollView(),
   ),
   WidgetsAllInCatalogItem(
+    title: 'SliverGrid',
+    targetWidget: WidgetsAllInSliverGrid(),
+  ),
+  WidgetsAllInCatalogItem(
+    title: 'SliverList',
+    targetWidget: WidgetsAllInSliverList(),
+  ),
+  WidgetsAllInCatalogItem(
     title: 'Stack',
     targetWidget: WidgetsAllInStack(),
   ),

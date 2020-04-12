@@ -17,3 +17,4 @@ export 'src/platform_sdk.dart';
 export 'package:flutter/material.dart';
 // 每次新导出一个 package，最好在对应的依赖包重新 pub get
 export 'package:path_provider/path_provider.dart';
+export 'package:random_color/random_color.dart';

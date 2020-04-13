@@ -17,6 +17,22 @@ class WidgetsAllIn extends StatelessWidget {
 
 final List<WidgetsAllInCatalogItem> catalogItems = [
   WidgetsAllInCatalogItem(
+    title: 'Material',
+    targetWidget: WidgetsAllInCatalog(
+      title: 'Material',
+      catalogItems: [
+        WidgetsAllInCatalogItem(
+          title: 'SliverAppBar',
+          targetWidget: WidgetsAllInSliverAppBar(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'Scaffold',
+          targetWidget: WidgetsAllInMaterialScaffold(),
+        ),
+      ],
+    ),
+  ),
+  WidgetsAllInCatalogItem(
     title: 'Column',
     targetWidget: WidgetsAllInColumn(),
   ),
@@ -64,6 +80,10 @@ final List<WidgetsAllInCatalogItem> catalogItems = [
         WidgetsAllInCatalogItem(
           title: 'ListView NotificationListener',
           targetWidget: WidgetsAllInListViewNotificationListener(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'ListView Width',
+          targetWidget: WidgetsAllInListViewWidth(),
         ),
       ],
     ),

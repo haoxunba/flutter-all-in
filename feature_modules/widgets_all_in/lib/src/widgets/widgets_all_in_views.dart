@@ -9,6 +9,7 @@ export 'widgets_all_in_listView_ notificationListener.dart';
 export 'widgets_all_in_listView_build.dart';
 export 'widgets_all_in_listView_keepScrollOffset.dart';
 export 'widgets_all_in_listView_scrollController.dart';
+export 'widgets_all_in_listView_width.dart';
 export 'widgets_all_in_listView.dart';
 export 'widgets_all_in_singleChildScrollView.dart';
 export 'widgets_all_in_sliverGrid.dart';
@@ -17,3 +18,5 @@ export 'widgets_all_in_stack.dart';
 export 'widgets_all_in_statefullWidget.dart';
 export 'widgets_all_in_statelessWidget.dart';
 export 'widgets_all_in_text.dart';
+
+export 'material/widgets_all_in_material_views.dart';

@@ -74,7 +74,6 @@ class WidgetsAllInSliverListItem extends StatelessWidget {
             Container(color: Colors.blue, height: 150.0),
           ],
         ),
-        makeHeader('SliverFixedExtentList'),
         SliverFixedExtentList(
           itemExtent: 150.0, // 强制 child tile 在 main axis 的 extend 大小
           delegate: SliverChildListDelegate(

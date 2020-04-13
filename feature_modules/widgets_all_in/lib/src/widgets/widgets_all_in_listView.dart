@@ -40,7 +40,7 @@ class _WidgetsAllInListViewItem extends State<WidgetsAllInListViewItem> {
         keepScrollOffset: false,
       ),
       children: <Widget>[
-        // width 不起作用，参考 widgets_all_in_container.dart
+        // width 不起作用，参考widgets_all_in_container.dart
         Container(
           width: 200,
           height: 50,

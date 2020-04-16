@@ -29,6 +29,10 @@ final List<FunctionAllInCatalogItem> catalogItems = [
           title: 'GlobalKey',
           targetWidget: FunctionAllInGlobalKey(),
         ),
+        FunctionAllInCatalogItem(
+          title: 'GlobalKey Sliver',
+          targetWidget: FunctionAllInGlobalKeySliver(),
+        ),
       ],
     ),
   ),

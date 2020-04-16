@@ -42,7 +42,8 @@ class _FunctionAllInGlobalKeyScreenState
 }
 
 class SwitcherScreen extends StatefulWidget {
-  // 如果不写super(key: key)，会导致当前工程有bug，点击按钮key.currentState是null
+  // 如果不写super(key: key)，会导致当前工程有bug，
+  // 点击floatingActionButton按钮key.currentState是null
   SwitcherScreen({Key key}) : super(key: key);
   @override
   SwitcherScreenState createState() => SwitcherScreenState();

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:rubber/rubber.dart';
 
-class MenuPage extends StatefulWidget {
-  MenuPage({Key key}) : super(key: key);
+class PluginRubberMenuPage extends StatefulWidget {
+  PluginRubberMenuPage({Key key}) : super(key: key);
 
   @override
-  _MenuPageState createState() => _MenuPageState();
+  _PluginRubberMenuPage createState() => _PluginRubberMenuPage();
 }
 
-class _MenuPageState extends State<MenuPage> with SingleTickerProviderStateMixin {
-
+class _PluginRubberMenuPage extends State<PluginRubberMenuPage>
+    with SingleTickerProviderStateMixin {
   RubberAnimationController _controller;
 
   @override
@@ -19,21 +19,24 @@ class _MenuPageState extends State<MenuPage> with SingleTickerProviderStateMixin
         dismissable: true,
         lowerBoundValue: AnimationControllerValue(pixel: 100),
         upperBoundValue: AnimationControllerValue(pixel: 400),
-        duration: Duration(milliseconds: 200)
-    );
+        duration: Duration(milliseconds: 200));
     super.initState();
   }
 
   void _expand() {
     print("expand");
-    _controller.launchTo(_controller.value,_controller.upperBound,velocity: 2);
+    _controller.launchTo(_controller.value, _controller.upperBound,
+        velocity: 2);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Menu",style: TextStyle(color: Colors.cyan[900]),),
+        title: Text(
+          "Menu",
+          style: TextStyle(color: Colors.cyan[900]),
+        ),
       ),
       body: Container(
         child: RubberBottomSheet(
@@ -55,28 +58,23 @@ class _MenuPageState extends State<MenuPage> with SingleTickerProviderStateMixin
 
   Widget _getLowerLayer() {
     return Container(
-      decoration: BoxDecoration(
-          color: Colors.cyan[100]
-      ),
+      decoration: BoxDecoration(color: Colors.cyan[100]),
     );
   }
+
   Widget _getUpperLayer() {
     return Container(
-      decoration: BoxDecoration(
-          color: Colors.cyan
-      ),
+      decoration: BoxDecoration(color: Colors.cyan),
     );
   }
+
   Widget _getMenuLayer() {
     return Container(
       height: 100,
       child: Center(
         child: Text("MENU"),
       ),
-      decoration: BoxDecoration(
-        color: Colors.red
-      ),
+      decoration: BoxDecoration(color: Colors.red),
     );
   }
-
 }

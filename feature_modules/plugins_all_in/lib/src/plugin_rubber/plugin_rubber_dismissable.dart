@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:rubber/rubber.dart';
 
-class DismissablePage extends StatefulWidget {
-  DismissablePage({Key key}) : super(key: key);
+class PluginRubberDismissablePage extends StatefulWidget {
+  PluginRubberDismissablePage({Key key}) : super(key: key);
 
   @override
-  _DismissablePageState createState() => _DismissablePageState();
+  _PluginRubberDismissablePage createState() => _PluginRubberDismissablePage();
 }
 
-class _DismissablePageState extends State<DismissablePage>
+class _PluginRubberDismissablePage extends State<PluginRubberDismissablePage>
     with SingleTickerProviderStateMixin {
   RubberAnimationController _controller;
 

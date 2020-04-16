@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'plugin_rubber/plugin_rubber.dart';
 import 'plugins_all_in_catalog.dart';
 import 'plugin_path_provider/plugin_path_provider.dart';
-import 'plugin_rubber/plugin_rubber.dart';
 
 const String appTitle = 'Function All In';
 
@@ -25,6 +25,30 @@ final List<PluginsAllInCatalogItem> catalogItems = [
   ),
   PluginsAllInCatalogItem(
     title: 'rubber',
-    targetWidget: PluginRubber(),
+    targetWidget: PluginsAllInCatalog(
+      title: 'Rubber',
+      catalogItems: [
+        PluginsAllInCatalogItem(
+          title: 'Rubber Dedault',
+          targetWidget: PluginRubberDefaultPage(),
+        ),
+        PluginsAllInCatalogItem(
+          title: 'Rubber Dismissable',
+          targetWidget: PluginRubberDismissablePage(),
+        ),
+        PluginsAllInCatalogItem(
+          title: 'Rubber Menu',
+          targetWidget: PluginRubberMenuPage(),
+        ),
+        PluginsAllInCatalogItem(
+          title: 'Rubber Scroll',
+          targetWidget: PluginRubberScrollPage(),
+        ),
+        PluginsAllInCatalogItem(
+          title: 'Rubber Spring',
+          targetWidget: PluginRubberSpringPage(),
+        ),
+      ],
+    ),
   ),
 ];

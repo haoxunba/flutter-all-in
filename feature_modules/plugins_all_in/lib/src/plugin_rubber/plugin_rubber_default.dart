@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:rubber/rubber.dart';
 
-class DefaultPage extends StatefulWidget {
-  DefaultPage({Key key}) : super(key: key);
+class PluginRubberDefaultPage extends StatefulWidget {
+  PluginRubberDefaultPage({Key key}) : super(key: key);
 
   @override
-  _DefaultPageState createState() => _DefaultPageState();
+  _PluginRubberDefaultPage createState() => _PluginRubberDefaultPage();
 }
 
-class _DefaultPageState extends State<DefaultPage>
+class _PluginRubberDefaultPage extends State<PluginRubberDefaultPage>
     with SingleTickerProviderStateMixin {
   RubberAnimationController _controller;
 

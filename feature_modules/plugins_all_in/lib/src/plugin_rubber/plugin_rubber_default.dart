@@ -59,9 +59,10 @@ class _PluginRubberDefaultPage extends State<PluginRubberDefaultPage>
       ),
       body: Container(
         child: RubberBottomSheet(
-          // 显示 bottomSheet 底层的 widget
+          // RubberBottomSheet 是堆叠显示在 body 的上一层，
+          // lowerLayer 定义的是底层 body 对应的 widget。
           lowerLayer: _getLowerLayer(),
-          // 显示 bottomSheet 对应的 widget
+          // 定义 RubberBottomSheet 对应的 Widget
           upperLayer: _getUpperLayer(),
           animationController: _controller,
         ),
@@ -95,7 +96,7 @@ class _PluginRubberDefaultPage extends State<PluginRubberDefaultPage>
 
   Widget _getLowerLayer() {
     return Container(
-      decoration: BoxDecoration(color: Colors.cyan[100]),
+      decoration: BoxDecoration(color: Colors.red),
     );
   }
 

@@ -10,11 +10,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  path_provider: ^1.4.5
-  rubber: ^0.4.0
-  hydrated_bloc: ^2.0.0
-  flutter_bloc: 2.1.1
   bloc: 2.0.0
+  colorize_lumberdash: 2.1.0
+  flutter_bloc: 2.1.1
+  hydrated_bloc: ^2.0.0
+  lumberdash: 2.1.1
+  path_provider: ^1.4.5
+  print_lumberdash: 2.1.0
+  rubber: ^0.4.0
 
 dev_dependencies:
   flutter_test:

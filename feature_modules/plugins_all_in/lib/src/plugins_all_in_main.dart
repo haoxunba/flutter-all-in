@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'plugin_rubber/plugin_rubber.dart';
 import 'plugins_all_in_catalog.dart';
+import 'plugin_lumberdash/plugin_lumberdash.dart';
 import 'plugin_path_provider/plugin_path_provider.dart';
 import 'plugin_hydrated_bloc/plugin_hydrated_bloc.dart';
 
@@ -55,5 +56,9 @@ final List<PluginsAllInCatalogItem> catalogItems = [
   PluginsAllInCatalogItem(
     title: 'hydrated_bloc',
     targetWidget: PluginHydratedBloc(),
+  ),
+  PluginsAllInCatalogItem(
+    title: 'lumberdash',
+    targetWidget: PluginLumberdash(),
   ),
 ];

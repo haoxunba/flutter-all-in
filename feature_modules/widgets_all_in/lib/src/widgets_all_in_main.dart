@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:platform_sdk/platform_sdk.dart';
 
-import 'widgets_all_in_catalog.dart';
 import 'widgets/widgets_all_in_views.dart';
 
 const String appTitle = 'Widgets All In';
@@ -8,115 +7,115 @@ const String appTitle = 'Widgets All In';
 class WidgetsAllIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return WidgetsAllInCatalog(
-      title: 'WidgetsAllInCatalog',
+    return PlatformSdkCatalog(
+      title: 'PlatformSdkCatalog',
       catalogItems: catalogItems,
     );
   }
 }
 
-final List<WidgetsAllInCatalogItem> catalogItems = [
-  WidgetsAllInCatalogItem(
+final List<PlatformSdkCatalogItem> catalogItems = [
+  PlatformSdkCatalogItem(
     title: 'Material',
-    targetWidget: WidgetsAllInCatalog(
+    targetWidget: PlatformSdkCatalog(
       title: 'Material',
       catalogItems: [
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'SliverAppBar',
           targetWidget: WidgetsAllInSliverAppBar(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Scaffold',
           targetWidget: WidgetsAllInMaterialScaffold(),
         ),
       ],
     ),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Column',
     targetWidget: WidgetsAllInColumn(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Expanded',
     targetWidget: WidgetsAllInExpanded(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Form',
     targetWidget: WidgetsAllInForm(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Gesture',
     targetWidget: WidgetsAllInGestureDetector(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Image',
     targetWidget: WidgetsAllInImage(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'InkWell',
     targetWidget: WidgetsAllInInkWell(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'ListView',
-    targetWidget: WidgetsAllInCatalog(
+    targetWidget: PlatformSdkCatalog(
       title: 'ListView',
       catalogItems: [
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Normal ListView',
           targetWidget: WidgetsAllInListView(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'ListView.builder',
           targetWidget: WidgetsAllInListViewBuilder(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'ListView KeepScrollOffset',
           targetWidget: WidgetsAllInListViewKeepScrollOffset(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'ListView ScrollController',
           targetWidget: WidgetsAllInListViewScrollController(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'ListView NotificationListener',
           targetWidget: WidgetListViewNotificationListenerPage(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'ListView Width',
           targetWidget: WidgetListViewWidth(),
         ),
-        WidgetsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'ListView Column',
           targetWidget: WidgetListViewColumn(),
         ),
       ],
     ),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'SingleChildScroll',
     targetWidget: WidgetsAllInSingleChildScrollView(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'SliverGrid',
     targetWidget: WidgetsAllInSliverGrid(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'SliverList',
     targetWidget: WidgetSliverList(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Stack',
     targetWidget: WidgetsAllInStack(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'StatefullWidget',
     targetWidget: WidgetsAllInStatefullWidget(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'StatelessWidget',
     targetWidget: WidgetsAllInStatelessWidget(),
   ),
-  WidgetsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'Text',
     targetWidget: WidgetsAllInText(),
   ),

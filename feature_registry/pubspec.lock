@@ -8,6 +8,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.7+2"
+  ansicolor:
+    dependency: transitive
+    description:
+      name: ansicolor
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.2"
   archive:
     dependency: transitive
     description:
@@ -29,6 +36,20 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.4.0"
+  bloc:
+    dependency: transitive
+    description:
+      name: bloc
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.0"
+  blocs_all_in:
+    dependency: "direct main"
+    description:
+      path: "../feature_modules/blocs_all_in"
+      relative: true
+    source: path
+    version: "0.0.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -50,6 +71,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.14.11"
+  colorize_lumberdash:
+    dependency: transitive
+    description:
+      name: colorize_lumberdash
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.0"
   convert:
     dependency: transitive
     description:
@@ -69,6 +97,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_bloc:
+    dependency: transitive
+    description:
+      name: flutter_bloc
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -81,6 +116,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  hydrated_bloc:
+    dependency: transitive
+    description:
+      name: hydrated_bloc
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.0"
   image:
     dependency: transitive
     description:
@@ -88,6 +130,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.4"
+  lumberdash:
+    dependency: transitive
+    description:
+      name: lumberdash
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.1"
   matcher:
     dependency: transitive
     description:
@@ -172,6 +221,20 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  print_lumberdash:
+    dependency: transitive
+    description:
+      name: print_lumberdash
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.1.0"
+  provider:
+    dependency: transitive
+    description:
+      name: provider
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "3.2.0"
   quiver:
     dependency: transitive
     description:
@@ -193,6 +256,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.4.0"
+  rxdart:
+    dependency: transitive
+    description:
+      name: rxdart
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.22.6"
   sky_engine:
     dependency: transitive
     description: flutter

@@ -1,6 +1,7 @@
 library platform_sdk;
 
 export 'src/platform_sdk.dart';
+export 'src/platform_sdk_catalog.dart';
 
 /// define explicitly which classes to export and omit
 /// https://stackoverflow.com/questions/22494578/export-two-library-which-having-same-class-name

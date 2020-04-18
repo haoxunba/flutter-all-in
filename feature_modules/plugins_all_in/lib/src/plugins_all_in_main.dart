@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:platform_sdk/platform_sdk.dart';
 
 import 'plugin_rubber/plugin_rubber.dart';
-import 'plugins_all_in_catalog.dart';
 import 'plugin_lumberdash/plugin_lumberdash.dart';
 import 'plugin_path_provider/plugin_path_provider.dart';
 import 'plugin_hydrated_bloc/plugin_hydrated_bloc.dart';
@@ -11,53 +10,53 @@ const String appTitle = 'Function All In';
 class PluginsAllIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return PluginsAllInCatalog(
+    return PlatformSdkCatalog(
       title: 'Plugins All In Catalog',
       catalogItems: catalogItems,
     );
   }
 }
 
-final List<PluginsAllInCatalogItem> catalogItems = [
-  PluginsAllInCatalogItem(
+final List<PlatformSdkCatalogItem> catalogItems = [
+  PlatformSdkCatalogItem(
     title: 'path_provider',
     targetWidget: PluginPathProvider(
       storage: CounterStorage(),
     ),
   ),
-  PluginsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'rubber',
-    targetWidget: PluginsAllInCatalog(
+    targetWidget: PlatformSdkCatalog(
       title: 'Rubber',
       catalogItems: [
-        PluginsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Rubber Dedault',
           targetWidget: PluginRubberDefaultPage(),
         ),
-        PluginsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Rubber Dismissable',
           targetWidget: PluginRubberDismissablePage(),
         ),
-        PluginsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Rubber Menu',
           targetWidget: PluginRubberMenuPage(),
         ),
-        PluginsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Rubber Scroll',
           targetWidget: PluginRubberScrollPage(),
         ),
-        PluginsAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Rubber Spring',
           targetWidget: PluginRubberSpringPage(),
         ),
       ],
     ),
   ),
-  PluginsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'hydrated_bloc',
     targetWidget: PluginHydratedBloc(),
   ),
-  PluginsAllInCatalogItem(
+  PlatformSdkCatalogItem(
     title: 'lumberdash',
     targetWidget: PluginLumberdash(),
   ),

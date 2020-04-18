@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 
-class WidgetsAllInCatalogItem {
+class PlatformSdkCatalogItem {
   final String title;
   final Widget targetWidget;
 
-  WidgetsAllInCatalogItem({
+  PlatformSdkCatalogItem({
     @required this.title,
     @required this.targetWidget,
   })  : assert(title != null),
         assert(targetWidget != null);
 }
 
-class WidgetsAllInCatalog extends StatelessWidget {
+class PlatformSdkCatalog extends StatelessWidget {
   static const double maxButtonWidth = 150;
 
-  final List<WidgetsAllInCatalogItem> catalogItems;
+  final List<PlatformSdkCatalogItem> catalogItems;
   final String title;
 
-  WidgetsAllInCatalog({
+  PlatformSdkCatalog({
     @required this.title,
     @required this.catalogItems,
   });

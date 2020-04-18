@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:platform_sdk/platform_sdk.dart';
 
-import 'function_all_in_catalog.dart';
 import 'widgets/function_all_in_views.dart';
 
 const String appTitle = 'Function All In';
@@ -8,28 +7,28 @@ const String appTitle = 'Function All In';
 class FunctionAllIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return FunnctionAllInCatalog(
+    return PlatformSdkCatalog(
       title: 'Function All In Catalog',
       catalogItems: catalogItems,
     );
   }
 }
 
-final List<FunctionAllInCatalogItem> catalogItems = [
-  FunctionAllInCatalogItem(
+final List<PlatformSdkCatalogItem> catalogItems = [
+  PlatformSdkCatalogItem(
     title: 'Key',
-    targetWidget: FunnctionAllInCatalog(
+    targetWidget: PlatformSdkCatalog(
       title: 'Key',
       catalogItems: [
-        FunctionAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'Normal Key',
           targetWidget: FunctionAllInKey(),
         ),
-        FunctionAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'GlobalKey',
           targetWidget: FunctionAllInGlobalKey(),
         ),
-        FunctionAllInCatalogItem(
+        PlatformSdkCatalogItem(
           title: 'GlobalKey Sliver',
           targetWidget: FunctionAllInGlobalKeySliver(),
         ),

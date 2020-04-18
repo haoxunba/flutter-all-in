@@ -1,4 +1,4 @@
-name: plugins_all_in
+name: dart_all_in
 description: A new Flutter package project.
 version: 0.0.1
 author:
@@ -10,16 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  bloc: 2.0.0
-  colorize_lumberdash: 2.1.0
-  flutter_bloc: 2.1.1
-  hydrated_bloc: ^2.0.0
-  lumberdash: 2.1.1
-  path_provider: ^1.4.5
-  platform_sdk:
-    path: ../../platform_sdk
-  print_lumberdash: 2.1.0
-  rubber: ^0.4.0
 
 dev_dependencies:
   flutter_test:

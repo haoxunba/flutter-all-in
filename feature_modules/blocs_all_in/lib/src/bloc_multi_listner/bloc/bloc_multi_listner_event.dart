@@ -1,0 +1,1 @@
+enum BlocMultiBlocListnerEvent { increment, decrement }

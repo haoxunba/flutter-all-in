@@ -19,7 +19,6 @@ class _WidgetsAllInPaintingBoxDecoration
       body: Center(
         child: ListView(
           children: <Widget>[
-            // Align 包裹内部 Container 的 width 才会生效
             Align(
               alignment: Alignment.center,
               child: Container(
@@ -111,7 +110,6 @@ class _WidgetsAllInPaintingBoxDecoration
                 image: const DecorationImage(
                   image: AssetImage(
                     'assets/images/car.jpg',
-                    // 因为当前图片属于主工程依赖的 widgets_all_in 包文件，所以必须加上 package
                     package: 'widgets_all_in',
                   ),
                   fit: BoxFit.cover,

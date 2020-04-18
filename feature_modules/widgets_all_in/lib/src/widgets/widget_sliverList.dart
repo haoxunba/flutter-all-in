@@ -3,7 +3,7 @@ import 'package:platform_sdk/platform_sdk.dart';
 import 'dart:math' as math;
 
 /// https://medium.com/flutter/slivers-demystified-6ff68ab0296f
-class WidgetsAllInSliverList extends StatelessWidget {
+class WidgetSliverList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,7 +77,6 @@ class WidgetsAllInSliverListItem extends StatelessWidget {
         SliverFixedExtentList(
           itemExtent: 150.0, // 强制 child tile 在 main axis 的 extend 大小
           delegate: SliverChildListDelegate(
-            // 无论是 SliverList or SliverGrid 它们的 delegate 只有两种实例 SliverChildListDelegate 和 SliverChildBuilderDelegate
             [
               Container(color: Colors.red),
               Container(color: Colors.purple),

@@ -79,11 +79,15 @@ final List<WidgetsAllInCatalogItem> catalogItems = [
         ),
         WidgetsAllInCatalogItem(
           title: 'ListView NotificationListener',
-          targetWidget: WidgetsAllInListViewNotificationListener(),
+          targetWidget: WidgetListViewNotificationListenerPage(),
         ),
         WidgetsAllInCatalogItem(
           title: 'ListView Width',
-          targetWidget: WidgetsAllInListViewWidth(),
+          targetWidget: WidgetListViewWidth(),
+        ),
+        WidgetsAllInCatalogItem(
+          title: 'ListView Column',
+          targetWidget: WidgetListViewColumn(),
         ),
       ],
     ),
@@ -98,7 +102,7 @@ final List<WidgetsAllInCatalogItem> catalogItems = [
   ),
   WidgetsAllInCatalogItem(
     title: 'SliverList',
-    targetWidget: WidgetsAllInSliverList(),
+    targetWidget: WidgetSliverList(),
   ),
   WidgetsAllInCatalogItem(
     title: 'Stack',

@@ -46,6 +46,8 @@ class _WidgetsAllInListViewScrollControllerItem
     super.initState();
     //监听滚动事件，打印滚动位置
     _controller.addListener(() {
+      // print(_controller.runtimeType);
+      // print(_controller.position);
       print(_controller.offset); //打印滚动位置
       // offset 只是便捷属性，真正所有的位置信息在position属性中
       if (_controller.offset < 1000 && showToTopBtn) {

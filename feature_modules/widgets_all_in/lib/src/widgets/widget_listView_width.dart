@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platform_sdk/platform_sdk.dart';
 
-class WidgetsAllInListViewWidth extends StatelessWidget {
+class WidgetListViewWidth extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// 渲染框具有无边界约束的最常见情况是：
@@ -9,24 +9,23 @@ class WidgetsAllInListViewWidth extends StatelessWidget {
     /// 可滚动区域(ListView 和其它 ScrollView 的子类)内时
     return Scaffold(
       appBar: AppBar(
-        title: Text('Widget ListView'),
+        title: Text('Widget ListView width'),
       ),
       body: Container(
         height: 200,
-        child: WidgetsAllInListViewWidthItem(),
+        child: WidgetListViewWidthItem(),
       ),
     );
   }
 }
 
-class WidgetsAllInListViewWidthItem extends StatefulWidget {
+class WidgetListViewWidthItem extends StatefulWidget {
   @override
-  _WidgetsAllInListViewWidthItem createState() =>
-      _WidgetsAllInListViewWidthItem();
+  _WidgetListViewWidthItemState createState() =>
+      _WidgetListViewWidthItemState();
 }
 
-class _WidgetsAllInListViewWidthItem
-    extends State<WidgetsAllInListViewWidthItem> {
+class _WidgetListViewWidthItemState extends State<WidgetListViewWidthItem> {
   @override
   void initState() {
     super.initState();
@@ -50,10 +49,14 @@ class _WidgetsAllInListViewWidthItem
             color: RandomColor().randomColor(),
           ),
         ),
-        Container(
-          height: 50,
-          color: Colors.amber[500],
-          child: const Center(child: Text('Entry B')),
+        // Align 给了 Container 宽度约束，所以这里的 width 会生效
+        Align(
+          child: Container(
+            width: 200,
+            height: 50,
+            color: Colors.amber[500],
+            child: const Center(child: Text('Entry B')),
+          ),
         ),
         Container(
           height: 50,

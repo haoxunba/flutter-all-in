@@ -8,9 +8,13 @@ class BlocMultiBlocListner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Reading and Writing Files')),
-      body: BlocProvider(
-        create: (_) => BlocMultiBlocListnerBloc(),
+      appBar: AppBar(title: Text('MultiBlocListner')),
+      body: MultiBlocProvider(
+        providers: [
+          BlocProvider<BlocMultiBlocListnerBloc>(
+            create: (_) => BlocMultiBlocListnerBloc(),
+          ),
+        ],
         child: MultiBlocListnerPage(),
       ),
     );
@@ -32,17 +36,21 @@ class _BlocBasicState extends State<MultiBlocListnerPage> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<BlocMultiBlocListnerBloc, BlocMultiBlocListnerState>(
-      listener: (contest, state) {
-        if (state.value > 10) {
-          Scaffold.of(context).showSnackBar(
-            SnackBar(
-              backgroundColor: RandomColor().randomColor(),
-              content: Text('state.vale greater than 10'),
-            ),
-          );
-        }
-      },
+    return MultiBlocListener(
+      listeners: [
+        BlocListener<BlocMultiBlocListnerBloc, BlocMultiBlocListnerState>(
+          listener: (contest, state) {
+            if (state.value > 10) {
+              Scaffold.of(context).showSnackBar(
+                SnackBar(
+                  backgroundColor: RandomColor().randomColor(),
+                  content: Text('state.vale greater than 10'),
+                ),
+              );
+            }
+          },
+        ),
+      ],
       child: BlocBuilder<BlocMultiBlocListnerBloc, BlocMultiBlocListnerState>(
         builder: (context, state) {
           return Center(

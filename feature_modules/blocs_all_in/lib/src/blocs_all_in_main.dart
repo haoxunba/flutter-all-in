@@ -2,7 +2,8 @@ import 'package:platform_sdk/platform_sdk.dart';
 
 import 'bloc_basic/bloc_basic.dart';
 import 'bloc_listner/bloc_listner.dart';
-import 'bloc_multi_listner/bloc_multi_listner.dart';
+import 'bloc_multi/bloc_multi.dart';
+import 'bloc_value/bloc_value.dart';
 
 const String appTitle = 'Blocs All In';
 
@@ -18,23 +19,19 @@ class BlocsAllIn extends StatelessWidget {
 
 final List<PlatformSdkCatalogItem> catalogItems = [
   PlatformSdkCatalogItem(
-    title: 'Bloc',
-    targetWidget: PlatformSdkCatalog(
-      title: 'Bloc',
-      catalogItems: [
-        PlatformSdkCatalogItem(
-          title: 'Bloc basic',
-          targetWidget: BlocBasic(),
-        ),
-        PlatformSdkCatalogItem(
-          title: 'Bloc BlocListner',
-          targetWidget: BlocBlocListner(),
-        ),
-        PlatformSdkCatalogItem(
-          title: 'Bloc MultiBlocListner',
-          targetWidget: BlocMultiBlocListner(),
-        ),
-      ],
-    ),
+    title: 'Bloc basic',
+    targetWidget: BlocBasic(),
+  ),
+  PlatformSdkCatalogItem(
+    title: 'Bloc BlocListner',
+    targetWidget: BlocBlocListner(),
+  ),
+  PlatformSdkCatalogItem(
+    title: 'Bloc MultiBlocListner',
+    targetWidget: BlocMultiBlocListner(),
+  ),
+  PlatformSdkCatalogItem(
+    title: 'Bloc value',
+    targetWidget: BlocValue(),
   ),
 ];

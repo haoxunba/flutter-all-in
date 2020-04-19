@@ -1,0 +1,1 @@
+enum BlocValueEvent { increment, decrement }

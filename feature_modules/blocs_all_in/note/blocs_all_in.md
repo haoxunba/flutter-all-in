@@ -41,6 +41,23 @@ class _BlocListenerBaseState<B extends Bloc<dynamic, S>, S> extends State<BlocLi
 }
 ```
 
+## BlocProvider
+
+创建 flutter bloc 提供 BlocProvider
+
+> `BlocProvider.value` 不能创建 bloc，只能提供 bloc，详情见 [BlocProvider.value](#BlocProvider.value)
+
+在大多数情况下，应使用 BlocProvider 创建新的bloc，这些bloc将可用于其余子树。在这种情况下，由于 BlocProvider 负责创建bloc，因此它将自动处理关闭bloc。
+
+```dart
+BlocProvider<BlocA>(
+    create: (BuildContext context) => BlocA(),
+    child: ChildA(),
+);
+```
+
+然后 The `child` which will have access to the bloc via `BlocProvider.of(context)`
+
 ## BlocProvider.value
 
 不能自动关闭，主要用于路由作为参数传递，参考demo bloc_value.dart

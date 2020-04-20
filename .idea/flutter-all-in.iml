@@ -6,6 +6,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/feature_modules/blocs_all_in/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/feature_modules/blocs_all_in/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/feature_modules/blocs_all_in/build" />
+      <excludeFolder url="file://$MODULE_DIR$/feature_modules/dart_all_in/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/feature_modules/dart_all_in/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/feature_modules/dart_all_in/build" />
       <excludeFolder url="file://$MODULE_DIR$/feature_modules/function_all_in/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/feature_modules/function_all_in/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/feature_modules/function_all_in/build" />

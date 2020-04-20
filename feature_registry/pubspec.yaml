@@ -20,6 +20,8 @@ dependencies:
     path: ../feature_modules/plugins_all_in
   blocs_all_in:
     path: ../feature_modules/blocs_all_in
+  dart_all_in:
+    path: ../feature_modules/dart_all_in
 
 dev_dependencies:
   flutter_test:

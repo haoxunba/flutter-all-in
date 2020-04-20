@@ -46,4 +46,8 @@ final List<PlatformSdkCatalogItem> catalogItems = [
     title: 'Blocs All In',
     targetWidget: buildAppModules()[3],
   ),
+  PlatformSdkCatalogItem(
+    title: 'Dart All In',
+    targetWidget: buildAppModules()[4],
+  ),
 ];

@@ -40,7 +40,7 @@ class _PluginHydratedBlocState extends State<PluginHydratedBloc> {
                   PluginHydratedBlocState>(
                 builder: (context, state) {
                   return Scaffold(
-                    appBar: AppBar(title: Text('Reading and Writing Files')),
+                    appBar: AppBar(title: Text('hydrated bloc')),
                     body: Center(
                       child: Text(
                         '${state.value}',

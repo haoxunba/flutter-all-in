@@ -10,9 +10,6 @@ class PluginHydratedBlocBloc
     return super.initialState ?? PluginHydratedBlocState(0);
   }
 
-  // Called when trying to read cached state from storage.
-  // Be sure to handle any exceptions that can occur and return null
-  // to indicate that there is no cached data.
   // 读取
   @override
   PluginHydratedBlocState fromJson(Map<String, dynamic> source) {
@@ -23,9 +20,6 @@ class PluginHydratedBlocBloc
     }
   }
 
-  // Called on each state change (transition)
-  // If it returns null, then no cache updates will occur.
-  // Otherwise, the returned value will be cached.
   // 写入
   @override
   Map<String, int> toJson(PluginHydratedBlocState state) {

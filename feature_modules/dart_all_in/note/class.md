@@ -19,9 +19,7 @@ class SmartTelevision extends Television {
 }
 ```
 
-Subclasses can override instance methods, getters, and setters.
-
-使用 `@override` 注释，表示有意要覆盖的成员
+使用 `@override` 注释，表示有意要覆盖的成员，Subclasses can override instance methods, getters, and setters.
 
 ```dart
 class SmartTelevision extends Television {

@@ -1,5 +1,6 @@
 import 'package:platform_sdk/platform_sdk.dart';
 
+import 'function/function.dart';
 import 'widgets/function_all_in_views.dart';
 
 const String appTitle = 'Function All In';
@@ -34,5 +35,9 @@ final List<PlatformSdkCatalogItem> catalogItems = [
         ),
       ],
     ),
+  ),
+  PlatformSdkCatalogItem(
+    title: 'Json Serialize',
+    targetWidget: FunctionJsonSerialize(),
   ),
 ];

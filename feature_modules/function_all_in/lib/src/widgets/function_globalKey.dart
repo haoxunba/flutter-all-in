@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 // 如果要在外部改变该状态，这时候就需要使用 GlobalKey。
-class FunctionAllInGlobalKey extends StatefulWidget {
+class FunctionGlobalKey extends StatefulWidget {
   @override
-  _FunctionAllInGlobalKey createState() => _FunctionAllInGlobalKey();
+  _FunctionGlobalKey createState() => _FunctionGlobalKey();
 }
 
-class _FunctionAllInGlobalKey extends State<FunctionAllInGlobalKey> {
+class _FunctionGlobalKey extends State<FunctionGlobalKey> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

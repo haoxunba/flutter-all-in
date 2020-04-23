@@ -32,17 +32,27 @@ Valuekey 又派生出了 `PageStorageKey : PageStorageKey('value')`
 @optionalTypeArgs
 abstract class GlobalKey<T extends State<StatefulWidget>> extends Key {
 ···
-static final Map<GlobalKey, Element> _registry = <GlobalKey, Element>{};
-static final Set<Element> _debugIllFatedElements = HashSet<Element>();
-static final Map<GlobalKey, Element> _debugReservations = <GlobalKey, Element>{};
-···
-BuildContext get currentContext ···
-Widget get currentWidget ···
-T get currentState ···
+  static final Map<GlobalKey, Element> _registry = <GlobalKey, Element>{};
+  static final Set<Element> _debugIllFatedElements = HashSet<Element>();
+  static final Map<GlobalKey, Element> _debugReservations = <GlobalKey, Element>{};
+  ···
+  BuildContext get currentContext => _currentElement;
+  Widget get currentWidget => _currentElement?.widget;
+  T get currentState {
+    final Element element = _currentElement;
+    if (element is StatefulElement) {
+      final StatefulElement statefulElement = element;
+      final State state = statefulElement.state;
+      if (state is T)
+        return state;
+    }
+    return null;
+  }
+}
 ```
 
-GlobalKey 使用了一个静态常量 Map 来保存它对应的 Element。
-你可以通过 GlobalKey 找到持有该GlobalKey的 Widget，State 和 Element。
+GlobalKey 使用了一个静态常量 Map 来保存它对应的 Element 。
+你可以通过 GlobalKey 找到持有该GlobalKey的 Widget ，State 和 Element 。
 
 > 注意：GlobalKey 是非常昂贵的，需要谨慎使用。
 

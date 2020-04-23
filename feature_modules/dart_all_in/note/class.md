@@ -56,4 +56,6 @@ Indicates that m should only be invoked from instance methods of C or classes th
 | 关键字 | extends | implements | with  |
 |  ----  | ----  | ----  | ----  |
 | 应用场景  | 所有类 | 接口  | Mixi类 |
-| 单元格  | 单元格 | 单元格  | 单元格 |
+| 使用个数  | 一个 | 多个  | 多个 |
+| 使用顺序  | 先使用 | 最后使用  | 其次使用 |
+| override  | 选择性复写父类方法 | 复写每个父类方法和属性  | 选择性复写父类方法 |

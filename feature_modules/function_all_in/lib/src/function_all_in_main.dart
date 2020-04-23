@@ -27,7 +27,7 @@ final List<PlatformSdkCatalogItem> catalogItems = [
         ),
         PlatformSdkCatalogItem(
           title: 'GlobalKey',
-          targetWidget: FunctionAllInGlobalKey(),
+          targetWidget: FunctionGlobalKey(),
         ),
         PlatformSdkCatalogItem(
           title: 'GlobalKey Sliver',

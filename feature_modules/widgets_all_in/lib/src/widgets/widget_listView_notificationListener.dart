@@ -21,20 +21,19 @@ class _WidgetListViewNotificationListenerPageState
         // 监听滚动通知
         child: NotificationListener<ScrollNotification>(
           onNotification: (ScrollNotification notification) {
-            // 属性说明参考 md 文件
-            print(
-                'notification.metrics.pixels: ${notification.metrics.pixels}');
-            print(
-                'notification.metrics.maxScrollExtent: ${notification.metrics.maxScrollExtent}');
-            print(
-                'notification.metrics.extentBefore: ${notification.metrics.extentBefore}');
-            // extentInside ：ViewPort内部长度；此示例中屏幕显示的列表部分的长度。不包括 AppBar 的高度
-            print(
-                'notification.metrics.extentInside: ${notification.metrics.extentInside}');
-            print(
-                'notification.metrics.extentAfter: ${notification.metrics.extentAfter}');
-            print(
-                'notification.metrics.atEdge: ${notification.metrics.atEdge}');
+            ScrollMetrics metrics = notification.metrics;
+            print(metrics.pixels); // 当前位置
+            print(metrics.atEdge); //是否在顶部或底部
+            print(metrics.axis); //垂直或水平滚动
+            print(metrics.axisDirection); // 滚动方向是down还是up
+            print(metrics.extentAfter); //视口底部距离列表底部有多大
+            print(metrics.extentBefore); //视口顶部距离列表顶部有多大
+            print(metrics.extentInside); //视口范围内的列表长度
+            print(metrics.maxScrollExtent); //最大滚动距离，列表长度-视口长度
+            print(metrics.minScrollExtent); //最小滚动距离
+            print(metrics.viewportDimension); //视口长度
+            print(metrics.outOfRange); //是否越过边界
+            print('------------------------');
             double progress = notification.metrics.pixels /
                 notification.metrics.maxScrollExtent;
             //重新构建

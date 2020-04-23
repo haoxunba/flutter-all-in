@@ -61,17 +61,7 @@ Container的width只是对子widget的约束。
 
 ScrollNotification 提供 `metrics` 属性，它的类型是ScrollMetrics，该属性包含当前ViewPort及滚动位置等信息：
 
-- pixels ：当前滚动位置。
-
-- maxScrollExtent ：最大可滚动长度。
-
-- extentBefore ：滑出ViewPort顶部的长度；此示例中相当于顶部滑出屏幕上方的列表长度。
-
-- extentInside ：ViewPort内部长度；即屏幕显示的列表部分的长度，**注意不是整个屏幕的长度**。
-
-- extentAfter ：列表中未滑入ViewPort部分的长度；此示例中列表底部未显示到屏幕范围部分的长度。
-
-- atEdge ：是否滑到了可滚动组件的边界（此示例中相当于列表顶或底部）。
+> `metrics.viewportDimension`: 视口尺寸。如果存在 AppBar Widget，视口的尺寸 = 屏幕高度 - AppBar高度
 
 ## SliverList & SliverGrid
 

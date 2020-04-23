@@ -1,5 +1,5 @@
 import 'package:platform_sdk/platform_sdk.dart';
-import 'dart_extends.dart';
+import 'dart_class_extends.dart';
 
 const String appTitle = 'Dart All In';
 

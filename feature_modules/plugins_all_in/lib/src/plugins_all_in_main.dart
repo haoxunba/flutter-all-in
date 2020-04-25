@@ -4,6 +4,7 @@ import 'plugin_rubber/plugin_rubber.dart';
 import 'plugin_lumberdash/plugin_lumberdash.dart';
 import 'plugin_path_provider/plugin_path_provider.dart';
 import 'plugin_hydrated_bloc/plugin_hydrated_bloc.dart';
+import 'plugin_url_launcher/plugin_url_launcher.dart';
 
 const String appTitle = 'Function All In';
 
@@ -59,5 +60,9 @@ final List<PlatformSdkCatalogItem> catalogItems = [
   PlatformSdkCatalogItem(
     title: 'lumberdash',
     targetWidget: PluginLumberdash(),
+  ),
+  PlatformSdkCatalogItem(
+    title: 'url_launch',
+    targetWidget: PluginUrlLauncher(),
   ),
 ];

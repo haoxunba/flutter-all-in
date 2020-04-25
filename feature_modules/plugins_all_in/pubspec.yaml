@@ -21,6 +21,7 @@ dependencies:
     path: ../../platform_sdk
   print_lumberdash: 2.1.0
   rubber: ^0.4.0
+  url_launcher: 5.4.5
 
 dev_dependencies:
   flutter_test:

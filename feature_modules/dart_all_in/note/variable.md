@@ -41,7 +41,7 @@ print(a); // {'name': 'xiaoming'}
 
 > Note：不能改变 final 定义的变量值是指不能改变变量的内存地址
 
-### Advance
+#### Final Advance
 
 reference <https://stackoverflow.com/questions/50431055/what-is-the-difference-between-the-const-and-final-keywords-in-dart>
 
@@ -81,7 +81,7 @@ bar = [42]; // Error: Setter not found: 'bar'.
 baz = [42]; // Error: Constant variables can't be assigned a value.
 ```
 
-#### Advance
+#### Const Advance
 
 reference <https://stackoverflow.com/questions/50431055/what-is-the-difference-between-the-const-and-final-keywords-in-dart>
 
@@ -89,18 +89,18 @@ You can use it when creating collections, like `const [1, 2, 3]`, and when const
 
 Const 规则:
 
-They must be created from data that can be calculated at compile time. A const object does not have access to anything you would need to calculate at runtime. `1 + 2` is a valid const expression, but `new DateTime.now()` is not. 
+They must be created from data that can be calculated at compile time. A const object does not have access to anything you would need to calculate at runtime. `1 + 2` is a valid const expression, but `new DateTime.now()` is not.
 
-They are deeply, transitively immutable. If you have a final field containing a collection, that collection can still be mutable. If you have a const collection, everything in it must also be const, recursively. 
+They are deeply, transitively immutable. If you have a final field containing a collection, that collection can still be mutable. If you have a const collection, everything in it must also be const, recursively.
 
-They are 规范化的. This is sort of like string interning: for any given const value, a single const object will be created and re-used no matter how many times the const expression(s) are evaluated. In other words: 
+They are 规范化的. This is sort of like string interning: for any given const value, a single const object will be created and re-used no matter how many times the const expression(s) are evaluated. In other words:
 
 ```dart
-getConst() => const [1, 2]; 
-main() { 
-  var a = getConst(); 
-  var b = getConst(); 
-  print(a === b); // true 
+getConst() => const [1, 2];
+main() {
+  var a = getConst();
+  var b = getConst();
+  print(a === b); // true
 }
 ```
 

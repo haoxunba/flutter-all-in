@@ -1,4 +1,6 @@
 import 'package:colorize_lumberdash/colorize_lumberdash.dart';
+import 'package:print_lumberdash/print_lumberdash.dart';
+import 'package:file_lumberdash/file_lumberdash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lumberdash/lumberdash.dart';
@@ -15,7 +17,7 @@ class _PluginLumberdash extends State<PluginLumberdash> {
   @override
   void initState() {
     super.initState();
-    putLumberdashToWork(withClients: [ColorizeLumberdash()]);
+    putLumberdashToWork(withClients: [PrintLumberdash()]);
 
     /// [有bug，能打印log，但是颜色不能显示]
     logWarning('Hello Warning');

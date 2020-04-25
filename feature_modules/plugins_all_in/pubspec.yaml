@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   bloc: 2.0.0
   colorize_lumberdash: 2.1.0
+  file_lumberdash: 0.0.1
   flutter_bloc: 2.1.1
   hydrated_bloc: ^2.0.0
   lumberdash: 2.1.1

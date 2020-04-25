@@ -5,7 +5,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
-/// https://flutter.cn/docs/cookbook/persistence/reading-writing-files
 class CounterStorage {
   Future<String> get _localPath async {
     final directory = await getApplicationDocumentsDirectory();

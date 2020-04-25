@@ -20,4 +20,6 @@ export 'widgets_all_in_statefullWidget.dart';
 export 'widgets_all_in_statelessWidget.dart';
 export 'widgets_all_in_text.dart';
 
+export 'material/widget_materialApp.dart';
+export 'material/widget_materialApp_onGeneratorRoute.dart';
 export 'material/widgets_all_in_material_views.dart';

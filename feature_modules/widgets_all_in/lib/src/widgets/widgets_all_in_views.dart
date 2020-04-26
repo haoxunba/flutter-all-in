@@ -1,7 +1,8 @@
 export 'widget_listView_column.dart';
 export 'widget_listView_notificationListener.dart';
 export 'widget_listView_width.dart';
-export 'widgets_all_in_column.dart';
+export 'widget_column_column.dart';
+export 'widget_column.dart';
 export 'widgets_all_in_container.dart';
 export 'widgets_all_in_expanded.dart';
 export 'widgets_all_in_form.dart';

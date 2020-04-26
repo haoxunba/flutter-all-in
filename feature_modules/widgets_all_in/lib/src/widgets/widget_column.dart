@@ -1,13 +1,6 @@
 import 'package:platform_sdk/platform_sdk.dart';
 
-/// Row 和 Column 都属于 flex box
-class WidgetsAllInColumn extends StatefulWidget {
-  @override
-  _WidgetsAllInColumn createState() => _WidgetsAllInColumn();
-}
-
-class _WidgetsAllInColumn extends State<WidgetsAllInColumn> {
-  double sideLength = 50;
+class WidgetColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

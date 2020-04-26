@@ -74,7 +74,19 @@ final List<PlatformSdkCatalogItem> catalogItems = [
   ),
   PlatformSdkCatalogItem(
     title: 'Column',
-    targetWidget: WidgetsAllInColumn(),
+    targetWidget: PlatformSdkCatalog(
+      title: 'Column',
+      catalogItems: [
+        PlatformSdkCatalogItem(
+          title: 'Column basic',
+          targetWidget: WidgetColumn(),
+        ),
+        PlatformSdkCatalogItem(
+          title: 'Column 注意事项',
+          targetWidget: WidgetColumnColumn(),
+        ),
+      ],
+    ),
   ),
   PlatformSdkCatalogItem(
     title: 'Expanded',

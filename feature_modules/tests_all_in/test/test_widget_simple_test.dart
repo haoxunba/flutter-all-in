@@ -1,11 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 // 当前test只会对导入的文件执行测试
-import 'package:tests_all_in/widget/flutter_test_simple.dart';
+import 'package:tests_all_in/widget/widget_test_simple.dart';
 
 void main() {
   testWidgets('MyWidget has a title and message', (WidgetTester tester) async {
     // pumpWidget 方法会建立并渲染我们提供的 widget。
-    await tester.pumpWidget(TestWidgetAllInSimple(title: 'T', message: 'M'));
+    await tester.pumpWidget(WidgetTestSimple(title: 'T', message: 'M'));
     // 通过Finder类查找widget
     final titleFinder = find.text('T');
     final messageFinder = find.text('M');

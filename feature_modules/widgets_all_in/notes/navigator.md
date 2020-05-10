@@ -16,11 +16,11 @@ Navigator.pop(context);
 
 ## 命名路由
 
-需要现在 MaterialApp 配置路由信息，一般有两种方式 `onGenerateRoute` 和 `routes`
+需要先在 MaterialApp 配置路由信息，一般有两种方式 `onGenerateRoute` 和 `routes`
 
 > 如果 MaterialApp 同时有 onGenerateRoute 和 routes 两个属性，那么在匹配路由的时候，会先匹配 routes 中的路由，如果 routes 没有对应的路由，才会去 onGenerateRoute 中匹配路由。但是一般情况下，两者不会同时使用。具体案例参考 navigator/widget_navigator_with_arguments.dart
 
-然后
+然后通过 `Navigator.pushNamed()` 跳转。
 
 ```dart
 Navigator.pushNamed(context, '/second');

@@ -73,6 +73,10 @@ final List<PlatformSdkCatalogItem> catalogItems = [
     ),
   ),
   PlatformSdkCatalogItem(
+    title: 'Container',
+    targetWidget: WidgetContainer(),
+  ),
+  PlatformSdkCatalogItem(
     title: 'Column',
     targetWidget: PlatformSdkCatalog(
       title: 'Column',

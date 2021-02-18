@@ -14,6 +14,7 @@ dependencies:
   flutter_bloc: 2.1.1
   platform_sdk:
     path: ../../platform_sdk
+  meta: 1.3.0-nullsafety.3
 
 dev_dependencies:
   flutter_test:
